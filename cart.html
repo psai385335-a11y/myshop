@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- essential meta tags -->
+    <meta charset="UTF-8">
+    <!-- makes layout work well on phones -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <h1 class="logo">My Shop</h1>
+    <nav>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#" id="cart-btn">Cart (<span id="cart-count">0</span>)</a>
+    </nav>
+</header>
+
+<!-- hero -->
+<section class="hero">
+    <h2>Welcome to My Shop</h2>
+    <p>Browse & buy your favorites.</p>
+</section>
+
+<!-- products -->
+<section id="products" class="products-section">
+    <h2>Products</h2>
+    <div id="products-grid" class="products-grid">
+        <!-- product cards inserted here by JS -->
+    </div>
+</section>
+
+<!-- about -->
+<section id="about" class="info-section">
+    <h2>About Us</h2>
+    <p>Simple shopping site for Men's.</p>
+</section>
+
+<!-- contact -->
+<section id="contact" class="info-section">
+    <h2>Contact Us</h2>
+    <p>Email: myshop@gmail.com</p>
+</section>
+
+<!-- simple cart popup -->
+<div id="cart-modal" class="cart-modal hidden">
+    <div class="cart-content">
+        <h3>Your Cart</h3>
+        <ul id="cart-items"></ul>
+        <p>Total: ₹<span id="cart-total">0</span></p>
+        <button id="close-cart">Close</button>
+    </div>
+</div>
+
+<footer class="site-footer">
+    <p>© 2025 My Shopping Site</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
